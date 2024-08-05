@@ -1,0 +1,1 @@
+﻿select UsersTbl.*, CitiesTbl.cityName FROM CitiesTbl INNER JOIN UsersTbl on CitiesTbl.Id = UsersTbl.cityId;

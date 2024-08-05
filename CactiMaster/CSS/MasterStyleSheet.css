@@ -1,0 +1,111 @@
+﻿body {
+    width: auto;
+    background-color: #fff7e6;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    height: 250px;
+    margin: 0px 150px 0px 0px;
+}
+
+h1 {
+    font-size: 60pt;
+    font-weight: bold;
+    color: darkorange;
+    text-align: center;
+    text-shadow: 1px 3px #000000;
+}
+
+h2 {
+    font-size: 20pt;
+    color: green;
+    font-weight: bold;
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    background-color:gold;
+}
+
+.mpBanner {
+    width: 100%;
+    height: 80px;
+}
+
+
+
+.mpTable {
+    width: 100%;
+    height: 700px;
+}
+
+    .mpTable tr {
+    }
+
+.mpMainPage {
+    width: 100%;
+}
+
+
+.mpHeader {
+    width: 100%;
+   
+}
+
+.mpSubHeader {
+    width: 100%;
+    height: 20px;
+}
+
+.mpMenu {
+    background-color: burlywood;
+    margin: 0px auto;
+    height: 20px;
+    font-family: Consolas;
+    font-size: 150%;
+    text-align: center;
+}
+
+    .mpMenu th {
+        padding: 5px 17px 5px 17px;
+    }
+
+
+    .mpMenu a {
+        text-decoration: none;
+    }
+
+        .mpMenu a:link {
+            color: black;
+        }
+
+        /* visited link */
+        .mpMenu a:visited {
+            color: black;
+        }
+
+        /* mouse over link */
+        .mpMenu a:hover {
+            color: green;
+        }
+
+/* selected link */
+.menu a:active {
+    color: palegoldenrod;
+}
+
+#footer {
+    bottom: 0;
+    text-align: center;
+    /* Height of the footer*/
+    background: burlywood;
+    margin: 10px auto;
+    clear: both;
+    height: 30px;
+    margin-bottom: 10px;
+}

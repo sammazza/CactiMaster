@@ -1,0 +1,24 @@
+﻿body {
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+.usertable, userth, usertd {
+    border: 1px solid black;
+}
+
+.userth, .usertd {
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+

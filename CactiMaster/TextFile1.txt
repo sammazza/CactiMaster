@@ -1,0 +1,12 @@
+﻿AZURE SITE
+https://cactimaster20230306083639.azurewebsites.net/cacti
+
+SQL Structure
+SELECT
+  Events.EventName AS EventName,
+  EventsLocation.LocationName AS LocationName
+FROM
+  Events
+  INNER JOIN EventsLocation ON Events.Location=EventsLocation.Location
+(WHERE ...)
+;

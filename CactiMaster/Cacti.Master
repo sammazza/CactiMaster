@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Cacti.master.cs" Inherits="CactiMaster.Cacti" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <script src="Scripts/CactiMaster.js"></script>
+
+
+    <link href="CSS/MasterStyleSheet.css" rel="stylesheet" />
+    <title>Cacti</title>
+    <!-- HEAD PLACEHOLDER OPEN -->
+    <asp:ContentPlaceHolder ID="HeadPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- HEAD PLACEHOLDER CLOSE -->
+</head>
+<body>
+    <table class="mpBanner">
+        <tr>
+            <td>
+                <h4 style="text-align: center; width: 100px;" id="todayDate"></h4>
+                <br />
+                <h4 style="text-align: center; width: 100px;" id="clock"></h4>
+            </td>
+            <td style="text-align:center">
+                <img style="height: 150px; margin-left: auto; margin-right: auto;" src="Images/banner1_bg.png" />
+            </td>
+            <td>
+                <div style="display: inline;">
+                    <%=loginMsg %>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <!-- row 1 master page table: MENU -->
+            <td colspan="3">
+                <table class="mpMenu">
+                    <tr>
+                        <th><a href="Cacti.aspx">Cacti</a></th>
+                        <th><a href="Mammilaria1.aspx">Mammilaria</a></th>
+                        <th><a href="Melocactus1.aspx">Melocactus</a></th>
+                        <th><a href="Opuntia1.aspx">Opuntia</a></th>
+                        <th><a href="CactiAbout.aspx">About</a></th>
+                        <th name="register" id="register" runat="server"><a href="Register.aspx">Register</a></th>
+                        <th name="login" id="login" runat="server"><a href="Login.aspx">Login</a></th>
+                        <th name="logout" id="logout" runat="server"><a href="Logout.aspx">Logout</a></th>
+                        <th><a id="adminUsers" href="AdminPage.aspx" runat="server">Admin</a></th>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="mpSubHeader">
+            <!-- row 2 master page table: SUB HEADER -->
+            <td colspan="3">
+                <!-- TR PLACEHOLDER OPEN -->
+                <asp:ContentPlaceHolder ID="SubHeaderPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+                <!-- TR PLACEHOLDER CLOSE -->
+            </td>
+        </tr>
+        <tr class="mpMainPage">
+            <!-- row 3 master page table: MAIN CONTENT -->
+            <td colspan="3">
+                <!-- TR PLACEHOLDER OPEN -->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <!-- TR PLACEHOLDER CLOSE -->
+            </td>
+        </tr>
+
+        <tr>
+            <!-- row 4 master page table: FOOTER -->
+            <td style="width:20%">
+                <a href="Cacti.aspx">Home</a>
+            </td>
+            <td style="width:60%">
+                <footer class="mpMenu" id="footer">
+                    &copy; Sam Mazza 2022 <a href="mailto:sam.teach.cs@gmail.com">&#9993; EMail us</a>
+                </footer>
+            </td>
+            
+            <td style="width:20%; text-align: right;"> Total Visitors: <%=Application["loggedInUsers"] %> </td>
+
+        </tr>
+    </table>
+</body>
+</html>
